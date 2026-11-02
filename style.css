@@ -1,0 +1,244 @@
+/* تنسيق الكلمات (نوع وحجم الخط) من مكان واحد */
+body, p, li, td, th, label, legend, a, span, button, h1, h2, input {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+body, p, li, td, th, label, legend, a, span, button, input {
+    font-size: 16px;
+}
+
+body {
+    background-color: #f2f6fb;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #1f4e9c;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#header p {
+    margin: 5px 0 0 0;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #163a74;
+    text-align: center;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+#nav a:hover {
+    background-color: #2f6fd1;
+}
+
+#content {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border: 1px solid #c9d6ea;
+}
+
+h2 {
+    color: #1f4e9c;
+    font-size: 20px;
+    border-bottom: 2px solid #c9d6ea;
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: #3b66b8;
+    color: #ffffff;
+    padding: 8px;
+    border: 1px solid #2c4f94;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #b5c4de;
+    text-align: center;
+}
+
+tr.details {
+    display: none;
+    background-color: #eaf2ff;
+}
+
+tr.selected td {
+    background-color: #fff6d6;
+}
+
+/* لون حقول الإدخال النصية من مكان واحد */
+.field {
+    color: #0b3d91;
+    background-color: #f7faff;
+    border: 1px solid #7f9ccc;
+    padding: 6px;
+    width: 260px;
+}
+
+.btn {
+    background-color: #1f9bd7;
+    color: #ffffff;
+    border: 2px solid #0e6a99;
+    border-radius: 6px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0e7db3;
+}
+
+fieldset {
+    border: 1px solid #7f9ccc;
+    padding: 10px 15px;
+}
+
+legend {
+    color: #1f4e9c;
+    font-weight: bold;
+}
+
+#formBox {
+    display: none;
+    margin-top: 15px;
+}
+
+span.error {
+    color: #cc0000;
+}
+
+#result {
+    margin-top: 15px;
+    background-color: #eaf7ea;
+    border: 1px solid #5aa55a;
+    padding: 5px 15px;
+    display: none;
+}
+
+#footer {
+    text-align: center;
+    color: #555555;
+    padding: 10px;
+}
+
+
+/* تحسينات واجهة قسم السيارات */
+.cars-intro {
+    color: #667085;
+    margin: -2px 0 20px;
+    line-height: 1.8;
+}
+#carsTable {
+    border-collapse: separate;
+    border-spacing: 0 11px;
+    margin: 8px 0 20px;
+}
+#carsTable th {
+    background: #172b4d;
+    border: 0;
+    padding: 13px 10px;
+    font-weight: 700;
+}
+#carsTable th:first-child { border-radius: 0 9px 9px 0; }
+#carsTable th:last-child { border-radius: 9px 0 0 9px; }
+#carsTable tr:not(:first-child):not(.details) {
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(20, 42, 76, .07);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+#carsTable tr:not(:first-child):not(.details):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(20, 42, 76, .12);
+}
+#carsTable tr:not(:first-child):not(.details) td {
+    border-top: 1px solid #edf0f5;
+    border-bottom: 1px solid #edf0f5;
+    border-left: 0;
+    border-right: 0;
+    padding: 12px 9px;
+    vertical-align: middle;
+}
+#carsTable tr:not(:first-child):not(.details) td:first-child {
+    border-right: 1px solid #edf0f5;
+    border-radius: 0 10px 10px 0;
+    color: #667085;
+    font-weight: 700;
+}
+#carsTable tr:not(:first-child):not(.details) td:last-child {
+    border-left: 1px solid #edf0f5;
+    border-radius: 10px 0 0 10px;
+}
+#carsTable .car-name {
+    min-width: 190px;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #172b4d;
+}
+.car-thumb {
+    width: 112px;
+    height: 68px;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 11px;
+    border-radius: 9px;
+    background: #eef2f7;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+#carsTable input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #1f9bd7;
+    cursor: pointer;
+}
+#carsTable tr.details td {
+    background: #eef5ff;
+    color: #344563;
+    border: 0;
+    border-radius: 0 0 9px 9px;
+    text-align: right;
+    padding: 13px 18px;
+    line-height: 1.8;
+}
+#carsTable tr.selected td {
+    background: #f0f7ff;
+}
+#continueBtn { box-shadow: 0 5px 12px rgba(31,155,215,.2); }
+@media (max-width: 760px) {
+    #content { width: 94%; box-sizing: border-box; padding: 12px; overflow-x: auto; }
+    #carsTable { min-width: 680px; }
+    .car-thumb { width: 88px; height: 58px; }
+    #nav a { padding: 11px 12px; }
+}
